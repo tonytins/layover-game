@@ -1,0 +1,70 @@
+:: StoryTitle
+Layover
+
+
+:: StoryData
+{
+  "ifid": "12345678-90ab-cdef-1234-567890abcdef",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Intro",
+  "zoom": 1
+}
+
+
+:: Intro {"position":"500,175","size":"100,100"}
+"Ugh," you place your arms in back of your head and stare up at the ceiling of Atlanta Airport. "So glad to be off that tiny little jet."
+
+"One more flight and we'll be in New York to visit our grandmother," Zack said. "We'll be in and out in a breeze."
+
+"Yeah. Yeah. I know," you sighed heavily. You turned to face a nearby gate and caught a glimpse at a nearby 747 that seemed to have just landed. A group of foxes in tight office suits marched out of the gate and spread out across the terminal. "Huh..." You murmured.
+
+As both of you walked to your next gate, you looked up at and around at the concourse in awe. While it wasn't as fanciest airport you'd seen compared to what you've seen on TV, it still had it's charm. Chairs lined next to big windows, letting in tones of light, and plenty of amenities.
+
+[[After reaching Gate 23->Reach G23]], you two bow to group of people sitting in front of you. You rest into your somewhat comfy seat with Zack right beside you As Zack begins to chat with the group in front of you, you gave a nod and pulled out his Deck to launch Detective Squeaks.
+
+
+:: Reach G23 {"position":"500,300","size":"100,100"}
+"Where are both of you from?" One of them asked.
+
+"Bridgeport. Bridgeport, Winnemac."
+
+"Heard that's a nice city. Nice pedestrian streets. Turned out better Zenith."
+
+"Tell me about it."
+
+Later, you tapped Zack shoulder. "Gonna grab some coffee," he whispered and tilted his head to a nearby vending machine.
+
+Zack glanced down at his brother's pleated skirt. "You're gonna regret it," he looked back up with a knowing smirk.
+
+
+:: Startup {"position":"375,175","size":"100,100"}
+(set: $playerName to "Max")
+(set: $inventory to (a:))
+(set: $visitRosemary to false)
+(set: $metFoxxo to false)
+(set: $mood to "curious")
+(set: $trackList to (a: "Skatepunk Sunrise", "Echoes of Indigo", "Binary Pulse"))
+
+
+:: StoryScript [script]
+// const { invoke } = window.__TAURI__.core;
+
+:: StoryStylesheet [stylesheet]
+body {
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f6f6f6;
+    background-color: #2f2f2f;
+  }
+}
