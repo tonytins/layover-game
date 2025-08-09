@@ -2,8 +2,6 @@
 
 Layover is a Twine-based text adventure game adopted from a flash fiction I wrote not too long ago. While the premise is based on true story, the events and characters are completely fictional.
 
-Normally, modern text adventure games are published online. This project aims to experiment with creating an offline version using Tauri. It's something I always wanted to try.
-
 ## 🗓️ Update Cycle
 
 | Type         | Frequency            | Notes                                    |
@@ -39,6 +37,10 @@ Before you begin, ensure you have the latest versions of the following installed
 ### 📖 Twine
 
 You will need to import the `.twee` source code into Twine in order to test or build. **DO NOT** open the `index.html`.
+
+## 🔍 Background
+
+Normally, modern text adventure games are published online. This project aims to experiment with creating an offline version using Tauri. It's something I always wanted to try.
 
 ## 📄 License
 
