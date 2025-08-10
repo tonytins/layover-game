@@ -13,15 +13,15 @@ Layover
 
 
 :: Intro {"position":"500,175","size":"100,100"}
-"Ugh," you place your arms in back of your head and stare up at the ceiling of Atlanta Airport. "So glad to be off that tiny little jet."
+"Ugh," you place your arms in back of your head and stare up at the ceiling of Atlanta Airport. "So glad to be off that dinky little jet."
 
-"One more flight and we'll be in New York to visit our grandmother," Zack said. "We'll be in and out in a breeze."
+"Just one more flight and we'll be in New York," Zack said. "We'll be in and out in a breeze."
 
 "Yeah. Yeah. I know," you sighed heavily. You turned to face a nearby gate and caught a glimpse at a nearby 747 that seemed to have just landed. A group of foxes in tight office suits marched out of the gate and spread out across the terminal. "Huh..." You murmured.
 
 As both of you walked to your next gate, you looked up at and around at the concourse in awe. While it wasn't as fanciest airport you'd seen compared to what you've seen on TV, it still had it's charm. Chairs lined next to big windows, letting in tones of light, and plenty of amenities.
 
-[[After reaching Gate 23->Reach G23]], you two bow to group of people sitting in front of you. You rest into your somewhat comfy seat with Zack right beside you As Zack begins to chat with the group in front of you, you gave a nod and pulled out his Deck to launch Detective Squeaks.
+[[After reaching Gate 23->Reach G23]], you two bow to group of people sitting in front of you.
 
 
 :: Meeting Foxxo {"position":"550,425","size":"100,100"}
@@ -31,8 +31,16 @@ You approached the vending machine, slipped a dollar in, and punched in the righ
   
 The fox slouched on the counter with a sigh until his promptly glanced over the blue fennec standing directly near him. "A fennec!?" They shouted. Everyone in the airport seemed to freeze in place for a split second before resuming going about their business. You gave a sheepish grin and reached for your drink. "Sorry. What are you doing all he way out here?" They crouched down with a hushed voice. "Heading to collage or something?"
 
+You glanced down at your letterman jacket and back up at the fox. "Layover," you shrugged. You sipped your iced coffee and closed your eyes, taking in the flavor, then let out a relaxed sigh. "[[It's a long story->Max's Background]]," you added.
+
+:: Max's Background {"position":"550,500","size":"100,100"}
+ The fox paused for a moment and noticed the sorrow in your eyes. "Fair enough."
+
+ "Here you go."
 
 :: Reach G23 {"position":"550,300","size":"100,100"}
+You rest into your somewhat comfy seat with Zack right beside you As Zack begins to chat with the group in front of you, you gave a nod and pulled out his Deck to launch Detective Squeaks.
+
 "Where are both of you from?" One of them asked.
 
 "Bridgeport. Bridgeport, Winnemac."
