@@ -1,5 +1,5 @@
 :: StoryTitle
-Layover
+layover
 
 
 :: StoryData
@@ -8,11 +8,30 @@ Layover
   "format": "Harlowe",
   "format-version": "3.3.9",
   "start": "Intro",
+  "tag-colors": {
+    "startup": "green",
+    "header": "yellow",
+    "footer": "red"
+  },
   "zoom": 1
 }
 
 
-:: Intro {"position":"500,175","size":"100,100"}
+:: Footer [footer] {"position":"425,50","size":"100,100"}
+
+
+
+:: Header [header] {"position":"550,50","size":"100,100"}
+
+
+
+:: Init [startup] {"position":"675,50","size":"100,100"}
+(set: $playerName to "Max")
+(set: $inventory to (a:))
+(set: $metFoxxo to false)
+
+
+:: Intro {"position":"425,175","size":"100,100"}
 "Ugh," you place your arms in back of your head and stare up at the ceiling of Atlanta Airport. "So glad to be off that dinky little jet."
 
 "Just one more flight and we'll be in New York," Zack said. "We'll be in and out in a breeze."
@@ -24,21 +43,35 @@ As both of you walked to your next gate, you looked up at and around at the conc
 [[After reaching Gate 23->Reach G23]], you two bow to group of people sitting in front of you.
 
 
-:: Meeting Foxxo {"position":"550,425","size":"100,100"}
-You approached the vending machine, slipped a dollar in, and punched in the right codes. As the machine hummed to life, you looked up beside you to see a well-dressed fox that seemed to be ordering some breakfast. While he looked the group foxes you saw earlier, his suit had a yellow vest underneath his tuxedo.  
-  
-**THUD!** went the bottle as it dropped down near the opening flap. The sound echoed into your big ears and startled you out of your trance, raising your fur right up in fright.
-  
-The fox slouched on the counter with a sigh until his promptly glanced over the blue fennec standing directly near him. "A fennec!?" They shouted. Everyone in the airport seemed to freeze in place for a split second before resuming going about their business. You gave a sheepish grin and reached for your drink. "Sorry. What are you doing all he way out here?" They crouched down with a hushed voice. "Heading to collage or something?"
+:: Max's Background {"position":"425,300","size":"100,100"}
+The fox paused for a moment and noticed the sorrow in your eyes. "Fair enough."
 
+"Here you go."
+
+"Thanks," the fox smiled then turned forward and gestured to follow him. "So how was your flight? Never seen a blue fennec around these parts."
+
+"To be frank," you spoke up with another glance up at the fox who begun to chow down on his food. "This silly layover was better then ride down here," you sipped another cup of your coffee. 
+
+"I'm surpised," the fox paused in his track and titled his head with a raised brow. "Your aviator goggles give the opposite impression."
+
+"I get that a lot," you laughed into your drink before lowering your arms again. "Grandmoher gave it to me. He asssumed I was into flying because I keptt messing around wih his flight sim on his computer."
+
+"And you didn't correct him?"
+
+* [["I liked it so much that it didn't matter."->Receive card]]
+
+
+:: Meeting Foxxo {"position":"675,175","size":"100,100"}
+You approached the vending machine, slipped a dollar in, and punched in the right codes. As the machine hummed to life, you looked up beside you to see a well-dressed fox that seemed to be ordering some breakfast. While he looked the group foxes you saw earlier, his suit had a yellow vest underneath his tuxedo.  
+
+**THUD!** went the bottle as it dropped down near the opening flap. The sound echoed into your big ears and startled you out of your trance, raising your fur right up in fright.
+
+The fox slouched on the counter with a sigh until his promptly glanced over the blue fennec standing directly near him. "A fennec!?" They shouted. Everyone in the airport seemed to freeze in place for a split second before resuming going about their business. You gave a sheepish grin and reached for your drink. "Sorry. What are you doing all he way out here?" They crouched down with a hushed voice. "Heading to collage or something?"
+(put: "Iced Coffee" into $inventory) (set: $metFoxxo to true)
 You glanced down at your letterman jacket and back up at the fox. "Layover," you shrugged. You sipped your iced coffee and closed your eyes, taking in the flavor, then let out a relaxed sigh. "[[It's a long story->Max's Background]]," you added.
 
-:: Max's Background {"position":"550,500","size":"100,100"}
- The fox paused for a moment and noticed the sorrow in your eyes. "Fair enough."
 
- "Here you go."
-
-:: Reach G23 {"position":"550,300","size":"100,100"}
+:: Reach G23 {"position":"550,175","size":"100,100"}
 You rest into your somewhat comfy seat with Zack right beside you As Zack begins to chat with the group in front of you, you gave a nod and pulled out his Deck to launch Detective Squeaks.
 
 "Where are both of you from?" One of them asked.
@@ -56,33 +89,7 @@ Zack glanced down at your pleated skirt. "You're gonna regret it," he looked bac
 You stood up and stuck your tongue out at him then [[you turned yourself around->Meeting Foxxo]].
 
 
-:: Startup {"position":"375,175","size":"100,100"}
-(set: $playerName to "Max")
-(set: $inventory to (a:))
-(set: $visitRosemary to false)
-(set: $metFoxxo to false)
-(set: $mood to "curious")
-(set: $trackList to (a: "Skatepunk Sunrise", "Echoes of Indigo", "Binary Pulse"))
-
-
-:: StoryScript [script]
-// const { invoke } = window.__TAURI__.core;
-
-:: StoryStylesheet [stylesheet]
-body {
-  color: #0f0f0f;
-  background-color: #f6f6f6;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #f6f6f6;
-    background-color: #2f2f2f;
-  }
-}
+:: Receive card {"position":"550,300","size":"100,100"}
+The fox, who had that hesitance look in his eyes since the two met, had soften. His posture began to gradually relax a little and quickly began to shift through his bag. "Here," he stepped aside, away from the busy traffic in the terminal and handed him a card for a travel agency. "Just mention Foxxo and they'll know."
+(put: "Travel Agency Card" into $inventory) 
+You stood there with your jaw dropped for a brief moment before yanking the card from his paw. "Thanks," you grinned. "But why?"
